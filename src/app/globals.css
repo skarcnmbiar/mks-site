@@ -11,7 +11,7 @@
 }
 
 .main-header{
-  background-image: url("/assets_img/mural.jpg"); /* Link to the mural.jpg image */
+  background-image: url("../../public/assets_img/mural.jpg"); /* Link to the mural.jpg image */
   background-repeat: no-repeat;
   background-size: cover; /* Make the background cover the entire div */
   background-position: center; /* Center the background image */
