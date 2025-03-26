@@ -1,26 +1,81 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+.nav-li li{
+  padding: 2rem;
+  color: black;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.footer nav > * {
+  padding: 2.5vh;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.main-header{
+  background-image: url("/assets_img/mural.jpg"); /* Link to the mural.jpg image */
+  background-repeat: no-repeat;
+  background-size: cover; /* Make the background cover the entire div */
+  background-position: center; /* Center the background image */
+}
+
+.hover-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: currentColor;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Default styles for larger screens */
+.main-navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-navbar ul li {
+  padding: 1rem;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .main-navbar ul {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the left */
+    padding: 1rem;
+  }
+
+  .main-navbar ul li {
+    padding: 0.5rem 0; /* Reduce padding for smaller screens */
+  }
+
+  .top-nav h1 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes appear {
+  from {
+    opacity: 0;
+    clip-path: inset(100% 100% 0 0);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
 }
