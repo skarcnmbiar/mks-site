@@ -3,6 +3,7 @@
 import {  useState, useEffect } from "react";
 import Link from "next/link";
 import "@/app/globals.css";
+import { ModeToggle } from "./theme-chng-btn";
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,12 +40,12 @@ export default function NavBar() {
  
   return (
     <nav
-      className={`bg-primary flex flex-col items-center justify-center main-navbar sticky top-0 z-50 transition-all duration-300 ${
+      className={`bg-background flex flex-col items-center justify-center main-navbar sticky top-0 z-50 transition-all duration-300 ${
         isNavTopVisible ? "" : "top-[-5%]"
       }`}
     >
       <div
-        className={` bg-primary flex items-center px-4 py-3 w-full nav-top transform transition-all duration-500 ease-in-out ${
+        className={` bg-background flex items-center px-4 py-3 w-full nav-top transform transition-all duration-500 ease-in-out ${
           isNavTopVisible
             ? "translate-y-0 opacity-100"
             : "-translate-y-full opacity-0"
@@ -62,12 +63,12 @@ export default function NavBar() {
         </button>
       </div>
 
-      {isNavTopVisible ? <div className="bg-black h-[1px] w-3/4"></div> : null}
+      {isNavTopVisible ? <div className="bg-primary h-[1px] w-3/4"></div> : null}
 
 
       {/* Navigation Links */}
       <div
-        className={`md:flex md:items-center md:justify-center ${
+        className={`md:flex md:items-center md:justify-center bg-background ${
           isMenuOpen ? "block" : "hidden"
         }`}
       >
@@ -75,50 +76,50 @@ export default function NavBar() {
           <li className="p-4">
             <Link
               href="#"
-              className="hover:text-secondary relative group transition-all duration-300"
+              className="hover:text-foreground relative group transition-all duration-300"
             >
               Home
-              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-secondary transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-foreground transition-all duration-300 group-hover:w-full"></span>
             </Link>
           </li>
           <li className="p-4">
             <Link
               href="#"
-              className="hover:text-secondary relative group transition-all duration-300"
+              className="hover:text-foreground relative group transition-all duration-300"
             >
               History
-              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-secondary transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-foreground transition-all duration-300 group-hover:w-full"></span>
             </Link>
           </li>
           <li className="p-4">
             <Link
               href="#"
-              className="hover:text-secondary relative group transition-all duration-300"
+              className="hover:text-foreground relative group transition-all duration-300"
             >
               Gallery
-              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-secondary transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-foreground transition-all duration-300 group-hover:w-full"></span>
             </Link>
           </li>
           <li className="p-4">
             <Link
               href="#"
-              className="hover:text-secondary relative group transition-all duration-300"
+              className="hover:text-foreground relative group transition-all duration-300"
             >
               About
-              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-secondary transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-foreground transition-all duration-300 group-hover:w-full"></span>
             </Link>
           </li>
           <li className="p-4">
             <Link
               href="#"
-              className="hover:text-secondary relative group transition-all duration-300"
+              className="hover:text-foreground relative group transition-all duration-300"
             >
               Contact
-              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-secondary transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-foreground transition-all duration-300 group-hover:w-full"></span>
             </Link>
           </li>
           <li>
-
+            <ModeToggle />
           </li>
         </ul>
       </div>
