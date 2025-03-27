@@ -75,7 +75,7 @@ export default function NavBar() {
         <ul className="flex flex-col md:flex-row md:space-x-6 text-center">
           <li className="p-4">
             <Link
-              href="#"
+              href="/"
               className="hover:text-foreground relative group transition-all duration-300"
             >
               Home
@@ -84,7 +84,7 @@ export default function NavBar() {
           </li>
           <li className="p-4">
             <Link
-              href="#"
+              href="/articles"
               className="hover:text-foreground relative group transition-all duration-300"
             >
               History

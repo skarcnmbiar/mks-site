@@ -9,7 +9,7 @@ export default function Header() {
         <input
           type="text"
           placeholder="Enter your text here"
-          className="ps-3 p-3 bg-input text-primary text-sm border-0 focus:outline-none rounded-l-md focus:ring-2 focus:ring-foreground"
+          className="ps-3 p-3 bg-foreground text-primary text-sm border-0 focus:outline-none rounded-l-md focus:ring-2 focus:ring-foreground"
         />
         <button
           type="button"
