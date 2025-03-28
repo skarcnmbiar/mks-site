@@ -1,6 +1,13 @@
 "use client";
 
 import "@/app/globals.css";
+import { Praise } from "next/font/google";
+
+const praiseFont = Praise({
+  subsets: ['latin'], // or other needed subsets.
+  weight: '400', // Praise only has a single weight.
+});
+
 
 export default function Header() {
   return (
@@ -9,23 +16,21 @@ export default function Header() {
         <input
           type="text"
           placeholder="Enter your text here"
-          className="ps-3 p-3 bg-foreground text-primary text-sm border-0 focus:outline-none rounded-l-md focus:ring-2 focus:ring-foreground"
+          className="ps-3 px-40 py-3 bg-white/50  text-black text-sm border-0 focus:outline-none rounded-l-md  backdrop-filter backdrop-blur-sm"
         />
         <button
           type="button"
-          className="p-3 bg-accent text-primary text-sm rounded-r-md hover:bg-accent focus:outline-none focus:ring-2 focus:ring-foreground"
+          className="p-3 bg-accent text-foreground text-sm rounded-r-md hover:bg-accent focus:outline-none focus:ring-2 focus:ring-foreground"
         >
           Search
         </button>
       </div>
 
       {/* Text at the Bottom */}
-      <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 text-center">
-        <p className="text-primary text-[14px]">
-          <i>
+      <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 text-center bg-gray-100/1 backdrop-filter backdrop-blur-sm p-5">
+        <p className={`${praiseFont.className} text-white/70 text-xl`}>
             “The blood of a warrior is closer to God, <br />
             than the ink of the philosopher or prayers of the Devout.”
-          </i>
         </p>
       </div>
     </div>
