@@ -1,17 +1,11 @@
 "use client";
 
 import "@/app/globals.css";
-import { Praise } from "next/font/google";
-
-const praiseFont = Praise({
-  subsets: ['latin'], // or other needed subsets.
-  weight: '400', // Praise only has a single weight.
-});
 
 
 export default function Header() {
   return (
-    <div className="relative h-[80vh] flex flex-col main-header bg-background overflow-hidden">
+    <div className="relative h-[80vh] flex flex-col main-header bg-background overflow-hidden inset-shadow-2xs">
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center">
         <input
           type="text"
@@ -24,14 +18,6 @@ export default function Header() {
         >
           Search
         </button>
-      </div>
-
-      {/* Text at the Bottom */}
-      <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 text-center bg-gray-100/1 backdrop-filter backdrop-blur-sm p-5">
-        <p className={`${praiseFont.className} text-white/70 text-xl`}>
-            “The blood of a warrior is closer to God, <br />
-            than the ink of the philosopher or prayers of the Devout.”
-        </p>
       </div>
     </div>
   );
