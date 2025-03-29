@@ -35,11 +35,11 @@ export default function Home() {
             than the ink of the philosopher or prayers of the Devout.”
           </p>
         </div>
-        <div className="flex flex-row justify-around my-15 mx-5">
-          <Card className={"w-full sm:w-1/5 border-primary/20 rounded-none p-0 m-0"}>
+        <div className="flex flex-col lg:flex-row md:flex-row justify-around my-15 mx-5">
+          <Card className={"w-full md:w-1/5 lg:w-1/5 border-primary/20 rounded-none p-0 m-0"}>
             <div className="relative h-60">
               <Image src={img1} alt={"404"} layout="fill" objectFit="cover" />
-              <div className="absolute inset-0 bg-black/70 hover:bg-black/30 flex items-center justify-center rounded-t-2xl transition ease-in-out duration-500 ">
+              <div className="absolute inset-0 bg-black/70 hover:bg-black/30 flex items-center justify-center transition ease-in-out duration-500 ">
                 <Link href={
                   ''
                 }>
