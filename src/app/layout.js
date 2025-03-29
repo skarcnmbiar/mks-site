@@ -4,6 +4,7 @@ import NavBar from "./components/main-navbar";
 import Footer from "./components/main-footer";
 import { ThemeProvider } from "next-themes";
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],

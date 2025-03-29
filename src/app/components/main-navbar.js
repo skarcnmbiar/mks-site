@@ -108,7 +108,7 @@ export default function NavBar() {
           </li>
           <li className="p-4">
             <Link
-              href="#"
+              href="/about"
               className="hover:text-primary relative group transition-all duration-300"
             >
               About

@@ -25,9 +25,9 @@ const praiseFont = Allison({
 export default function Home() {
   return (
     <>
-      <Header />
+      <Header imageUrl={"./assets_img/mural.jpg"} />
       <div className="w-full bg-background text-primary flex flex-col">
-        <div className="py-6 flex flex-row justify-center items-center bg-primary">
+        <div className="py-6 hidden sm:block flex flex-row justify-center items-center bg-primary">
           <p
             className={`${praiseFont.className} text-center text-foreground text-3xl`}
           >
@@ -35,7 +35,8 @@ export default function Home() {
             than the ink of the philosopher or prayers of the Devout.”
           </p>
         </div>
-        <div className="flex flex-col md:flex-row justify-around my-15 mx-5">
+        <div className="flex flex-col md:flex-row justify-around my-15 mx-5 gap-y-3">
+
           <Card className={"w-full md:w-1/5 border-primary/20 rounded-none p-0 m-0"}>
             <div className="relative h-60">
               <Image src={img1} alt={"404"} layout="fill" objectFit="cover" />
@@ -56,7 +57,7 @@ export default function Home() {
             </CardContent>
           </Card>
 
-          <Card className={"w-full md:w-1/5 shadow-lg border-none rounded-none p-0 m-0"}>
+          <Card className={"w-full md:w-1/5 border-primary/20 rounded-none p-0 m-0"}>
             <div className="relative h-60">
               <Image src={img2} alt={"404"} layout="fill" objectFit="cover" />
               <div className="absolute inset-0 bg-black/70 hover:bg-black/30 flex items-center justify-center transition ease-in-out duration-500 ">
@@ -76,7 +77,7 @@ export default function Home() {
             </CardContent>
           </Card>
 
-          <Card className={"w-full md:w-1/5 shadow-lg border-none rounded-none p-0 m-0"}>
+          <Card className={"w-full md:w-1/5 border-primary/20 rounded-none p-0 m-0"}>
             <div className="relative h-60">
               <Image src={img3} alt={"404"} layout="fill" objectFit="cover" />
               <div className="absolute inset-0 bg-black/70 hover:bg-black/30 flex items-center justify-center transition ease-in-out duration-500 ">
