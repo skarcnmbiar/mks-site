@@ -25,7 +25,7 @@ const praiseFont = Allison({
 export default function Home() {
   return (
     <>
-      <Header imageUrl={"./assets_img/mural.jpg"} />
+      <Header imageUrl={"/assets_img/mural.jpg"} />
       <div className="w-full bg-background text-primary flex flex-col">
         <div className="py-6 hidden sm:block flex flex-row justify-center items-center bg-primary">
           <p
