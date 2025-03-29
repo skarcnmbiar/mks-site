@@ -1,5 +1,6 @@
 import Header from "./components/main-header";
 import { Allison } from "next/font/google";
+import Link from "next/link";
 import {
   Card,
   CardContent,
@@ -9,7 +10,11 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
-import img1 from "../../public/assets_img/kalari.jpg"
+import img1 from "../../public/assets_img/kalari.jpg";
+import img2 from "../../public/assets_img/marriage.jpg";
+import img3 from "../../public/assets_img/house.jpg";
+
+
 
 
 const praiseFont = Allison({
@@ -22,7 +27,7 @@ export default function Home() {
     <>
       <Header />
       <div className="w-full bg-background text-primary flex flex-col">
-        <div className="my-10 flex flex-row justify-center items-center">
+        <div className="py-6 flex flex-row justify-center items-center bg-primary">
           <p
             className={`${praiseFont.className} text-center text-foreground text-3xl`}
           >
@@ -30,32 +35,65 @@ export default function Home() {
             than the ink of the philosopher or prayers of the Devout.”
           </p>
         </div>
-        <div className="flex flex-row justify-around">
-
-          <Card className={"w-max"}>
-            <CardHeader>
-              <CardTitle>Nair History</CardTitle>
-              <CardDescription>Nair also known as Malayala Kshatriya.</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <Image src={{img1}} alt="404" />
+        <div className="flex flex-row justify-around my-15 mx-5">
+          <Card className={"w-full sm:w-1/5 border-primary/20 rounded-none p-0 m-0"}>
+            <div className="relative h-60">
+              <Image src={img1} alt={"404"} layout="fill" objectFit="cover" />
+              <div className="absolute inset-0 bg-black/70 hover:bg-black/30 flex items-center justify-center rounded-t-2xl transition ease-in-out duration-500 ">
+                <Link href={
+                  ''
+                }>
+                  <CardTitle className="text-white text-2xl font-bold">
+                    Nair History
+                  </CardTitle>
+                </Link>
+              </div>
+            </div>
+            <CardContent className="p-4 pt-0">
+              <Link href={"./articles"}>
+                <h1>Latest</h1>
+              </Link>
             </CardContent>
-            <CardFooter>
-              <p>Card Footer</p>
-            </CardFooter>
           </Card>
 
-          <Card>
-            <CardHeader>
-              <CardTitle>Card Title</CardTitle>
-              <CardDescription>Card Description</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p>Card Content</p>
+          <Card className={"w-full sm:w-1/5 shadow-lg border-none rounded-none p-0 m-0"}>
+            <div className="relative h-60">
+              <Image src={img2} alt={"404"} layout="fill" objectFit="cover" />
+              <div className="absolute inset-0 bg-black/70 hover:bg-black/30 flex items-center justify-center transition ease-in-out duration-500 ">
+                <Link href={
+                  ''
+                }>
+                  <CardTitle className="text-white text-2xl font-bold">
+                    Facts Debunked
+                  </CardTitle>
+                </Link>
+              </div>
+            </div>
+            <CardContent className="p-4 pt-0">
+              <Link href={"./articles"}>
+                <h1>Latest</h1>
+              </Link>
             </CardContent>
-            <CardFooter>
-              <p>Card Footer</p>
-            </CardFooter>
+          </Card>
+
+          <Card className={"w-full sm:w-1/5 shadow-lg border-none rounded-none p-0 m-0"}>
+            <div className="relative h-60">
+              <Image src={img3} alt={"404"} layout="fill" objectFit="cover" />
+              <div className="absolute inset-0 bg-black/70 hover:bg-black/30 flex items-center justify-center transition ease-in-out duration-500 ">
+                <Link href={
+                  ''
+                }>
+                  <CardTitle className="text-white text-2xl font-bold">
+                    Join Us
+                  </CardTitle>
+                </Link>
+              </div>
+            </div>
+            <CardContent className="p-4 pt-0">
+              <Link href={"./articles"}>
+                <h1>Membership</h1>
+              </Link>
+            </CardContent>
           </Card>
         </div>
       </div>
