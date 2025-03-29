@@ -10,7 +10,7 @@ export default function Header() {
         <input
           type="text"
           placeholder="Enter your text here"
-          className="ps-3 px-40 py-3 bg-white/50  text-black text-sm border-0 focus:outline-none rounded-l-md  backdrop-filter backdrop-blur-sm"
+          className="ps-3 px:20 sm:px-40 py-3 bg-white/50  text-black text-sm border-0 focus:outline-none rounded-l-md  backdrop-filter backdrop-blur-sm"
         />
         <button
           type="button"
