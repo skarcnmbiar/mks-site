@@ -4,7 +4,6 @@ const nextConfig = {
     images: {
         unoptimized: true,
       },
-      basePath: '/mks-site',
 };
 
 export default nextConfig;

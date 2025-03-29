@@ -13,6 +13,7 @@ import Image from "next/image";
 import img1 from "../../public/assets_img/kalari.jpg";
 import img2 from "../../public/assets_img/marriage.jpg";
 import img3 from "../../public/assets_img/house.jpg";
+import mural from "../../public/assets_img/mural.jpg"
 
 
 
@@ -25,7 +26,7 @@ const praiseFont = Allison({
 export default function Home() {
   return (
     <>
-      <Header imageUrl={"/assets_img/mural.jpg"} />
+      <Header imageUrl={mural} />
       <div className="w-full bg-background text-primary flex flex-col">
         <div className="py-6 hidden sm:block flex flex-row justify-center items-center bg-primary">
           <p
