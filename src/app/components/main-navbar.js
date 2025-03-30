@@ -28,8 +28,8 @@ export default function NavBar() {
       if (currentScrollY > lastScrollY) {
         // Scrolling down
         setIsNavTopVisible(false);
-      } else {
-        // Scrolling up
+      }
+      if (currentScrollY < 30){
         setIsNavTopVisible(true);
       }
 
@@ -46,19 +46,19 @@ export default function NavBar() {
  
   return (
     <nav
-      className={`${nunitoSans.className} bg-background flex flex-col items-center justify-center main-navbar sticky top-0 z-50 transition-all duration-300 ${
-        isNavTopVisible ? "" : "top-[-5%]"
+      className={`${nunitoSans.className} bg-background flex flex-col items-center justify-center main-navbar sticky top-0 z-50 transition-all duration-200 ${
+        isNavTopVisible ? "" : "sm:top-[-5%]"
       }`}
     >
       <div
         className={` bg-background flex items-center px-4 py-3 w-full nav-top transform transition-all duration-500 ease-in-out ${
           isNavTopVisible
-            ? "translate-y-0 opacity-100"
-            : "-translate-y-full opacity-0"
+            ? "sm:translate-y-0 sm:opacity-100"
+            : "sm:-translate-y-full sm:opacity-0"
         } justify-between md:justify-center`}
       >
         {/* Logo */}
-        <h1 className="text-2xl text-foreground">Malayala Kshatriya Samajam</h1>
+        <h1 className="sm:text-2xl text-xl text-foreground">Malayala Kshatriya Samajam</h1>
 
         {/* Hamburger Button */}
         <button
