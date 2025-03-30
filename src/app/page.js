@@ -66,7 +66,7 @@ export default function Home() {
                   ''
                 }>
                   <CardTitle className="text-white text-2xl font-bold">
-                    Facts Debunked
+                    Myths Debunked
                   </CardTitle>
                 </Link>
               </div>
