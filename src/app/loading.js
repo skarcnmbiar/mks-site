@@ -1,22 +1,18 @@
-import { cn } from "@/lib/utils";
+import "./globals.css";
 
 export default function loadingPage() {
   return (
-    <div>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className={cn("animate-spin")}
-      >
-        <path d="M21 12a9 9 0 1 1-6.219-8.56" />
-      </svg>
+    <div className="flex flex-row items-center justify-center w-full h-full">
+      <div class="dot-spinner">
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+      </div>
     </div>
   );
 }

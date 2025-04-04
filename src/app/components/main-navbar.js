@@ -29,7 +29,7 @@ export default function NavBar() {
         // Scrolling down
         setIsNavTopVisible(false);
       }
-      if (currentScrollY < 30){
+      if (currentScrollY < 100){
         setIsNavTopVisible(true);
       }
 

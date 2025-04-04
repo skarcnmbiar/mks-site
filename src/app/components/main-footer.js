@@ -1,6 +1,7 @@
 import Link from "next/link";
 import "@/app/globals.css";
 import { Nunito_Sans } from "next/font/google";
+import SocialTray from "./social-tray";
 
 const nunitoSans = Nunito_Sans({
   subsets: ['latin'], // Or any other subsets you need
@@ -27,6 +28,9 @@ export default function Footer() {
             Press kit
           </Link>
         </nav>
+        <div>
+          <SocialTray/>
+        </div>
         <div className="flex flex-row align-middle">
           <p>Copyright ©- All right reserved by </p>
         </div>

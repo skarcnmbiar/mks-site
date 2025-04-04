@@ -1,11 +1,14 @@
 "use client";
 
 import "@/app/globals.css";
+import SocialTray from "./social-tray";
 
-
-export default function Header({imageUrl}) {
+export default function Header({ imageUrl }) {
   return (
-    <div style={{ '--component-bg-image': `url(${imageUrl})`}} className="relative h-[80vh] flex flex-col main-header bg-background overflow-hidden inset-shadow-2xs" >
+    <div
+      style={{ "--component-bg-image": `url(${imageUrl})` }}
+      className="relative h-[80vh] flex flex-col main-header bg-background overflow-hidden inset-shadow-2xs"
+    >
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center">
         <input
           type="text"
@@ -18,6 +21,9 @@ export default function Header({imageUrl}) {
         >
           Search
         </button>
+      </div>
+      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 ">
+        <SocialTray />
       </div>
     </div>
   );
