@@ -2,16 +2,16 @@ import "./globals.css";
 
 export default function loadingPage() {
   return (
-    <div className="flex flex-row items-center justify-center w-full h-full">
-      <div class="dot-spinner">
-        <div class="dot-spinner__dot"></div>
-        <div class="dot-spinner__dot"></div>
-        <div class="dot-spinner__dot"></div>
-        <div class="dot-spinner__dot"></div>
-        <div class="dot-spinner__dot"></div>
-        <div class="dot-spinner__dot"></div>
-        <div class="dot-spinner__dot"></div>
-        <div class="dot-spinner__dot"></div>
+    <div classNameName="flex flex-row items-center justify-center h-[100vh] w-[100vw]">
+      <div className="dot-spinner">
+        <div className="dot-spinner__dot"></div>
+        <div className="dot-spinner__dot"></div>
+        <div className="dot-spinner__dot"></div>
+        <div className="dot-spinner__dot"></div>
+        <div className="dot-spinner__dot"></div>
+        <div className="dot-spinner__dot"></div>
+        <div className="dot-spinner__dot"></div>
+        <div className="dot-spinner__dot"></div>
       </div>
     </div>
   );

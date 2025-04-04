@@ -22,7 +22,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="transition-colors duration-5000 ease-in-out">
+    <html lang="en" className="scroll-smooth transition-colors duration-5000 ease-in-out">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col max-w-full `}
       >

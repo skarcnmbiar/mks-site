@@ -7,7 +7,7 @@ import x from "../../../public/assets_img/x.svg";
 
 export default function SocialTray() {
   return (
-    <div className="mb-5 flex flex-row justify-center items-center">
+    <div className="mb-5 flex flex-row justify-center items-center ">
       <Link href={"#"}>
         <div className="p-3 m-1 rounded-[100%] bg-background hover:scale-120 transition ease-in-out duration-300">
           <Image

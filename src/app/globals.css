@@ -3,9 +3,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-:root {
-  --component-bg-image: url("../../public/assets_img/mural.jpg");
-}
 
 .nav-li li {
   padding: 2rem;
@@ -17,7 +14,7 @@
 }
 
 .main-header {
-  background-image: var(--component-bg-image); /* Link to the mural.jpg image */
+  background-image: url("../../public/assets_img/mural.jpg");
   background-repeat: no-repeat;
   background-size: cover; /* Make the background cover the entire div */
   background-position: center; /* Center the background image */
@@ -310,3 +307,5 @@
     opacity: 1;
   }
 }
+
+
