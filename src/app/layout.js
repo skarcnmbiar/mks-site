@@ -3,7 +3,7 @@ import "./globals.css";
 import NavBar from "./components/main-navbar";
 import Footer from "./components/main-footer";
 import { ThemeProvider } from "next-themes";
-
+import SmoothScroll from "./components/smooth-scroll";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,7 +22,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scroll-smooth transition-colors duration-5000 ease-in-out">
+    <html
+      lang="en"
+      className="scroll-smooth transition-colors duration-5000 ease-in-out"
+    >
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col max-w-full `}
       >
@@ -32,9 +35,11 @@ export default function RootLayout({ children }) {
           enableSystem
           disableTransitionOnChange // Prevent flickering during theme changes
         >
-          <NavBar />
-          <main>{children}</main>
-          <Footer />
+          <SmoothScroll >
+            <NavBar />
+            <main>{children}</main>
+            <Footer />
+          </SmoothScroll>
         </ThemeProvider>
       </body>
     </html>

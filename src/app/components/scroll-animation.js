@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { useEffect } from 'react';
 
 export default function ScrollAnimatedContainer({ children, initial, animate, transition, options, className }) {
   const [ref, inView] = useInView({
