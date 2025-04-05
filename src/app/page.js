@@ -25,7 +25,7 @@ const praiseFont = Allison({
 export default function Home() {
   return (
     <>
-      <Header imageUrl={mural} />
+      <Header />
       <div className="w-full bg-background text-primary flex flex-col">
         <ScrollAnimatedContainer
           initial={{ opacity: 0 }}

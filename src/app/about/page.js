@@ -21,11 +21,11 @@ export default function about() {
             the protection of rights within the Nair community. The primary
             motive of our organization is to serve the Nair community. They are 
             This organization also helps in developing and educating the Nair
-            community. It will also help in uplifting economically weak Nair's.
+            community. It will also help in uplifting economically weak Nair&apos;s.
             Our services are exclusively aimed at the traditional Nair
             communities. No improper nair would be included in the fold. We
             embrace individuals from diverse ideologies and sampradayas.
-            Recognizing the Nair community's affiliation with the
+            Recognizing the Nair community&apos;s affiliation with the
             Hindu Varna of Kshatriyas, our organization endeavors to uphold and
             preserve all Kshatriya traditions among Nairs. This includes
             promoting the practice of initiation ceremonies such as Upanayana

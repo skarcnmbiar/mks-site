@@ -4,7 +4,7 @@ import "@/app/globals.css";
 import SocialTray from "./social-tray";
 import ScrollAnimatedContainer from "./scroll-animation";
 
-export default function Header({ imageUrl }) {
+export default function Header() {
   return (
     <div
       className=" main-header relative h-[80vh] flex flex-col bg-background overflow-hidden inset-shadow-2xs"
