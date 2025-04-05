@@ -30,8 +30,8 @@ export default function Home() {
         <ScrollAnimatedContainer
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          options={{ threshold: 0.5 }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
+          options={{ threshold: 0.2 }}
         >
           <div className="my-10 py-6 hidden sm:block flex flex-row justify-center items-center ">
             <p
@@ -42,17 +42,18 @@ export default function Home() {
             </p>
           </div>
         </ScrollAnimatedContainer>
-        
-        <ScrollAnimatedContainer
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          options={{ threshold: 0.5 }}
-        >
-          <div className="flex flex-col md:flex-row justify-around my-15 mx-5 gap-y-3 ">
+
+        <div className="flex flex-col md:flex-row justify-around my-15 mx-5 gap-y-3 ">
+          <ScrollAnimatedContainer
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
+            options={{ threshold: 0.2 }}
+            className="w-full md:w-1/5"
+          >
             <Card
               className={
-                "w-full md:w-1/5 border-primary/20 rounded-none p-0 m-0 overflow-hidden"
+                "w-full border-primary/20 rounded-none p-0 m-0 overflow-hidden"
               }
             >
               <div className="relative h-60">
@@ -71,9 +72,17 @@ export default function Home() {
                 </Link>
               </CardContent>
             </Card>
+          </ScrollAnimatedContainer>
+          <ScrollAnimatedContainer
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
+            options={{ threshold: 0.2 }}
+            className="w-full md:w-1/5"
+          >
             <Card
               className={
-                "w-full md:w-1/5 border-primary/20 rounded-none p-0 m-0"
+                "w-full border-primary/20 rounded-none p-0 m-0"
               }
             >
               <div className="relative h-60">
@@ -92,9 +101,17 @@ export default function Home() {
                 </Link>
               </CardContent>
             </Card>
+          </ScrollAnimatedContainer>
+          <ScrollAnimatedContainer
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
+            options={{ threshold: 0.2 }}
+            className="w-full md:w-1/5"
+          >
             <Card
               className={
-                "w-full md:w-1/5 border-primary/20 rounded-none p-0 m-0"
+                "w-full border-primary/20 rounded-none p-0 m-0"
               }
             >
               <div className="relative h-60">
@@ -113,8 +130,8 @@ export default function Home() {
                 </Link>
               </CardContent>
             </Card>
-          </div>
-        </ScrollAnimatedContainer>
+          </ScrollAnimatedContainer>
+        </div>
         <div></div>
       </div>
     </>
